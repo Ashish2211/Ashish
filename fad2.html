@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var abc = document.forms["myForm"]["fname"].value;
+    if (abc == "") {
+        alert("aaaaaaaaaaa");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+<fieldset>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname"></br>
+Number: <input type="number" name="number"></br>
+Email: <input type="email" name="email"></br>
+<input type="submit" value="Submit">
+</form>
+</fieldset>
+
+</body>
+</html>
